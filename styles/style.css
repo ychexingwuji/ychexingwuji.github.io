@@ -1,109 +1,132 @@
-/* p {
-    color: red;
-    width: 500px;
-    border: 1px solid black;
-} */
+/* || 一般设置 */
 
-/* 元素选择器 
-所有指定(该)类型的 HTML 元素
-*/
-/* p, li, h1 {
-    color: red;
-} */
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-/* ID 选择器
-具有特定 ID 的元素（单一 HTML 页面中，每个 ID 只对应一个元素，一个元素只对应一个 ID）
-示例：
-#my-id
-选择 <p id="my-id"> 或 <a id="my-id">
- */
-
- /* 类选择器
- 具有特定类的元素（单一页面中，一个类可以有多个实例）
- 示例：
- .my-class
-选择 <p class="my-class"> 和 <a class="my-class">
- */
-
- /* 属性选择器
- 拥有特定属性的元素
- 示例：
- img[src]
-选择 <img src="myimage.png"> 而不是 <img>
- */
-
- /* 伪（Pseudo）类选择器
- 特定状态下的特定元素（比如鼠标指针悬停）
- 示例：
- a:hover
-仅在鼠标指针悬停在链接上时选择 <a>。
- */
-
- /* 更多信息请参阅 选择器 https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Selectors */
-
-
-
- html {
-    /* px 表示 “像素（pixels）”: 基础字号为 10 像素 */
-    font-size: 10px; 
-    /* Google fonts 输出的 CSS */
-    font-family: 'Open Sans', sans-serif; 
-    background-color: #00539F;
+html {
+  font-size: 10px;
+  background-color: #a9a9a9;
 }
 
 body {
-    /*强制页面永远保持 600 像素宽。*/
-    width: 600px;  
-    /* 为 margin 或 padding 等属性设置两个值时，
-    第一个值代表元素的上方和下方（在这个例子中设置为 0），
-    而第二个值代表左边和右边（在这里，auto 是一个特殊的值，意思是水平方向上左右对称）。
-    你也可以使用一个，三个或四个值 */
-    margin: 0 auto;
-    background-color: #FF9500;
-    /*
-    设置右边，下方，左边的内边距为20像素。
-    值以上、右、下、左的顺序排列。顺时针
-    */
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+/* || 排版 */
+
+h1, h2, h3 {
+  font-family: 'Long Cang', cursive;
+  color: #2a2a2a;
+}
+
+p, input, li {
+  font-family: 'Noto Sans SC', sans-serif;
+  color: #2a2a2a;
 }
 
 h1 {
-    margin: 0; /*通过设置 margin: 0; 覆盖掉默认样式*/
-    padding: 20px 0;
-    text-align: center;
-    color: #00539F;
-    font-size: 50px;
-    /*
-    第一个值设置水平偏移值 —— 即阴影右移的像素数（负值左移）。
-    第二个值设置垂直偏移值 —— 即阴影下移的像素数（负值上移）。
-    第三个值设置阴影的模糊半径 —— 值越大产生的阴影越模糊。
-    第四个值设置阴影的基色。
-    */
-    text-shadow: 3px 3px 1px black;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
 }
 
-img {
-    display: block;  /* 为了使图像有外边距，我们必须使用 display: block 给予其块级行为 */
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    background-color: #FF9500;
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
 }
 
 p, li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
-/* padding：即内边距，围绕着内容（比如段落）的空间。
-border：即边框，紧接着内边距的线。
-margin：即外边距，围绕元素外部的空间。 */
+/* || 标题布局 */
 
+header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
 
-/* width ：元素的宽度
-background-color ：元素内容和内边距底下的颜色
-color ：元素内容（通常是文本）的颜色
-text-shadow ：为元素内的文本设置阴影
-display ：设置元素的显示模式（暂略） */
+main, header, nav, article, aside, footer, section {
+  background-color: rgba(29, 149, 63, 0.5);
+  padding: 1%;
+}
+
+h1 {
+  flex: 5;
+  text-transform: uppercase;
+}
+
+header img {
+  display: block;
+  height: 60px;
+  padding-top: 20.15px;
+}
+
+nav {
+  height: 50px;
+  flex: 100%;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a, nav span {
+  display: inline-block;
+  font-size: 2rem;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+/* || 主体布局 */
+
+main {
+  display: flex;
+}
+
+article, section {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  padding: 1%;
+}
+
+aside a {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+aside img {
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 10px;
+}
