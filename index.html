@@ -1,74 +1,55 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Mozilla 宣传主页</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <h1>Mozilla</h1>
-      <!-- 插入 <img> 元素，链接至较小的 Firefox 标志。 -->
-      <img src="originals/firefox_logo-only_RGB120.png" alt="较小的 Firefox 标志">
+    <title>观鸟网</title>
+    <link href="https://fonts.googleapis.com/css?family=Long+Cang|Noto+Sans+SC:300" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <header>
+        <h1>观鸟网</h1>
+        <img src="images/dove.png" alt="一张鸽子剪影图片">
+
+        <nav>
+            <ul>
+                <li><span>主页</span></li>
+                <li><a href="#">开始</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">设备</a></li>
+                <li><a href="#">论坛</a></li>
+              </ul>
+        </nav>
     </header>
 
     <main>
-      <article>
-        <!-- 插入来自 Bilibili 的 <iframe> 元素 -->
-        <iframe src="https://www.bilibili.com/video/BV1rs411d7hC?p=2" width="400">
-        </iframe>
+        <article>
+            <h2>欢迎</h2>
 
-        <h2>自由网络 尽情驰骋</h2>
+            <p>欢迎访问观鸟网虚拟站点。如果这是一个真实的网站，那么它就是观鸟爱好者的理想聚集地。无论你是一名期望学习观鸟知识的新手，还是一位希望分享体会、经验和图片的观鸟老手。</p>
+            <p>时不我待！赶快带齐装备，关上电脑，去拥抱美丽的大自然吧！</p>
+        </article>
 
-        <p>Mozilla 是一个全球社区，这里聚集着来自五湖四海的 技术人员、思考者、建造者。我们致力于让 Internet 保持活力，保持畅通，人人皆可贡献，人人皆可创造。我们坚信：开放平台的协作对于人的发展至关重要，也决定着我们共同的未来。</p>
-
-        <p>更多精彩信息，敬请点击下方图片。<a href="https://www.flickr.com/photos/mathiasappel/21675551065/">小熊猫照片</a>由 Mathias Appel 拍摄</p>
-      </article>
-
-      <div class="further-info">
-        <!-- 插入包含 srcsets 和 sizes 属性的图像 -->
-        <a href="https://www.mozilla.org/zh-CN/firefox/new/">
-            <img srcset="originals/firefox_logo-only_RGB120.png 120w, 
-                         originals/firefox_logo-only_RGB400.png 400w" 
-                 sizes="(max-width: 480px) 80px, 
-                        400px"
-                 src="originals/firefox_logo-only_RGB400.png" 
-                 alt="www.mozilla.org/zh-CN/firefox/new link picture">
-        </a>
-        <a href="https://www.mozilla.org/">
-            <img srcset="originals/mozilla-dinosaur-head120.png 120w, 
-                         originals/mozilla-dinosaur-head400.png 400w" 
-                 sizes="(max-width: 480px) 80px, 
-                        400px"
-                 src="originals/mozilla-dinosaur-head400.png" 
-                 alt="www.mozilla.org link picture">
-        </a>
-        <a href="https://addons.mozilla.org/">
-          <img srcset="originals/firefox-addons120.jpg 120w, 
-                       originals/firefox-addons.jpg 400w" 
-               sizes="(max-width: 480px) 80px, 
-                     400px"
-               src="originals/firefox-addons.jpg" 
-               alt="addons.mozilla.org link picture">
-        </a>
-        <a href="https://developer.mozilla.org/zh-CN/">
-          <img src="images/mdn.svg" alt="developer.mozilla.org/zh-CN link picture">
-        </a>
-        <div class="clearfix"></div>
-      </div>
-
-      <div class="red-panda">
-        <!-- 插入照片元素 -->
-        <picture>
-            <source media="(max-width: 600px)" srcset="originals/red-panda-avator600.png">
-            <source media="(min-width: 601px)" srcset="originals/red-panda.jpg">
-            <img src="originals/red-panda.jpg" alt="Chris standing up holding his daughter Elva">
-          </picture>
-      </div>
-
+        <aside>
+            <h2>收藏照片</h2>
+            
+            <a href="images/favorite-1.jpg"><img src="images/favorite-1_th.jpg" alt="一只体型小巧的鸟，羽毛蓝绿色，爪黑白相间，黑色的喙细且锋利。点击缩略图查看完整照片。"></a>
+            <a href="images/favorite-2.jpg"><img src="images/favorite-2_th.jpg" alt="一只美丽的孔雀的上半身图片，它的颈上覆盖蓝色的羽毛，有浅色的喙和蓝色的冠。点击缩略图查看完整照片。"></a>
+            <a href="images/favorite-3.jpg"><img src="images/favorite-3_th.jpg" alt="一只大鸟的上半身图片，羽毛白色，浅色的喙细长而弯曲。点击缩略图查看完整照片。"></a>
+            <a href="images/favorite-4.jpg"><img src="images/favorite-4_th.jpg" alt="一只成年鹈鹕，羽毛大多为白色，背部和腹部有少许黑色羽毛，又长又直的喙呈黄色，喙的下方有一个喉囊可以暂时储存食物。点击缩略图查看完整照片。"></a>
+        </aside>
     </main>
-  </body>
+    
+    <footer>
+        <p>本虚拟站点遵守 CC0 协议，所有内容均可任意修改和复用。原始版本由 Chris Mills 于 2016 年编写。Roy Tian 于 2019 年汉化。</p>
+        <p><a href="http://game-icons.net/lorc/originals/dove.html">鸽子图标</a> 由 Lorc 绘制。</p>
+    </footer>
+
+</body>
 </html>
